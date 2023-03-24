@@ -18,14 +18,14 @@ export const ContactForm: FC = (props) => {
         { value: 3, text: 'Mas de 6 meses' },
     ]
     return (
-        <form className="text-center">
+        <form className="flex flex-col items-center justify-center">
             <TextInput required={true} label="First Name" name="firstname" />
             <TextInput required={true} label="Last Name" name="lastname" />
             <TextInput required={true} label="Phone Number" name="phone" />
             <TextInput required={true} label="Email" name="email" />
-            <RadioInput required label="¿Haz invertido antes?" name="previous-investments" options={ previousInvestmentOptions} />
-            <RadioInput required label="Rango probable de inversión" name="investment-range" options={ previousInvestmentRangesOptions} />
-            <RadioInput required label="Fecha probable de inversión" name="tentative-investments" options={ tentativeInvestmentDateOptions} />
+            <RadioInput required label="¿Haz invertido antes?" name="previous-investments" options={previousInvestmentOptions} />
+            <RadioInput required label="Rango probable de inversión" name="investment-range" options={previousInvestmentRangesOptions} />
+            <RadioInput required label="Fecha probable de inversión" name="tentative-investments" options={tentativeInvestmentDateOptions} />
             <input type="submit" className="bg-yellow-400 px-3 py-2" value="Enviar"></input>
         </form>
     );
